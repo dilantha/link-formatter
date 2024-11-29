@@ -1,0 +1,11 @@
+{
+	"id": "link-formatter",
+	"name": "Link Formatter",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Formats a block of links into a clean markdown list",
+	"author": "Dilantha",
+	"authorUrl": "https://github.com/dilantha",
+	"fundingUrl": "https://buymeacoffee.com/dilantha",
+	"isDesktopOnly": true
+}

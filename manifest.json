@@ -1,7 +1,7 @@
 {
 	"id": "link-formatter",
 	"name": "Link Formatter",
-	"version": "1.0.2",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Formats a block of links into a clean markdown list",
 	"author": "Dilantha Nanayakkara",

@@ -3,8 +3,8 @@ import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Set
 export default class LinkFormatterPlugin extends Plugin {
     async onload() {
         this.addCommand({
-            id: 'format-link-list',
-            name: 'Format links to list',
+            id: 'link-formatter',
+            name: 'Format links to unordered list',
             editorCallback: (editor: Editor, view: MarkdownView) => {
                 const selectedText = editor.getSelection();
                 const formattedText = this.formatLinkList(selectedText);

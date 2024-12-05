@@ -1,6 +1,6 @@
 {
   "name": "link-formatter",
-  "version": "Invalid version type. Use: major, minor, or patch",
+  "version": "Invalid version type. Use: major, minor, or patch.1",
   "description": "",
   "main": "main.js",
   "scripts": {

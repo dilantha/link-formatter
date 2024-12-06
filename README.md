@@ -29,10 +29,11 @@ This plugin uses a Makefile to streamline development tasks. Here are the availa
 - `make clean` - Clean build artifacts
 - `make all` - Run install, build, and test in sequence
 
-For releases:
-- `make release-major` - Release a major version
-- `make release-minor` - Release a minor version
-- `make release-patch` - Release a patch version
+For version management and releases:
+- `make bump-major` - Bump major version number
+- `make bump-minor` - Bump minor version number
+- `make bump-patch` - Bump patch version number
+- `make release` - Release the current version (create git tag and push)
 
 > [Link to plugin](https://github.com/dilantha/obsidian-link-formatter)
 > [Buy me a coffee](https://buymeacoffee.com/dilantha)

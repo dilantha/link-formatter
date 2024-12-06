@@ -20,17 +20,14 @@ clean:
 	rm -rf main.js main.js.map
 
 # Release targets
-release-major: clean install test
+release-major: clean install build test
 	./bump-version.sh major
-	$(MAKE) build
 
-release-minor: clean install test
+release-minor: clean install build test
 	./bump-version.sh minor
-	$(MAKE) build
 
-release-patch: clean install test
+release-patch: clean install build test
 	./bump-version.sh patch
-	$(MAKE) build
 
 # Development mode
 dev:

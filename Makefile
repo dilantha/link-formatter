@@ -1,4 +1,4 @@
-.PHONY: install build test clean release-major release-minor release-patch
+.PHONY: install build test clean bump-major bump-minor bump-patch release
 
 # Default target
 all: install build test
@@ -19,15 +19,19 @@ test:
 clean:
 	rm -rf main.js main.js.map
 
-# Release targets
-release-major: clean install build test
+# Version bump targets
+bump-major: clean install build test
 	./bump-version.sh major
 
-release-minor: clean install build test
+bump-minor: clean install build test
 	./bump-version.sh minor
 
-release-patch: clean install build test
+bump-patch: clean install build test
 	./bump-version.sh patch
+
+# Release target
+release:
+	./release.sh $$(./bump-version.sh)
 
 # Development mode
 dev:
@@ -41,8 +45,9 @@ help:
 	@echo "  make test        - Run tests"
 	@echo "  make clean       - Clean build artifacts"
 	@echo "  make dev         - Run in development mode"
-	@echo "  make release-major - Release major version"
-	@echo "  make release-minor - Release minor version"
-	@echo "  make release-patch - Release patch version"
+	@echo "  make bump-major  - Bump major version"
+	@echo "  make bump-minor  - Bump minor version"
+	@echo "  make bump-patch  - Bump patch version"
+	@echo "  make release     - Release the current version"
 	@echo "  make all         - Install, build, and test"
 	@echo "  make help        - Show this help message"

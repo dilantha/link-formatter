@@ -50,11 +50,4 @@ sed -i '' "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" p
 # Update manifest.json
 sed -i '' "s/\"version\": \"$current_version\"/\"version\": \"$new_version\"/" manifest.json
 
-# Git operations
-git add package.json manifest.json
-git commit -m "chore: bump version to $new_version"
-git tag "v$new_version"
-git push origin main
-git push origin "v$new_version"
-
-echo "Successfully bumped version to $new_version and pushed changes"
+echo "$new_version"

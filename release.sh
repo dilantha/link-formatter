@@ -11,8 +11,8 @@ fi
 # Git operations
 git add .
 git commit -m "Release version $version"
-git tag "v$version"
+git tag "$version"
 git push origin main
-git push origin "v$version"
+git push origin "$version"
 
 echo "Successfully released version $version and pushed changes"

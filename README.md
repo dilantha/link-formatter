@@ -35,5 +35,4 @@ For version management and releases:
 - `make bump-patch` - Bump patch version number
 - `make release` - Release the current version (create git tag and push)
 
-> [Link to plugin](https://github.com/dilantha/obsidian-link-formatter)
-> [Buy me a coffee](https://buymeacoffee.com/dilantha)
+> If you find this plugin useful, please consider [donating](https://buymeacoffee.com/dilantha) to support me. Cheers!

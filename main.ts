@@ -6,12 +6,13 @@ export default class LinkFormatterPlugin extends Plugin {
         this.addCommand({
             id: 'link-formatter',
             name: 'Format links to unordered list',
-            editorCallback: (editor: Editor, view: MarkdownView) => {
-                if (editor.somethingSelected()) {
-                    const selectedText = editor.getSelection();
-                    const formattedText = formatLinkList(selectedText);
-                    editor.replaceSelection(formattedText);
+            editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
+                if (checking) {
+                    return !!editor.somethingSelected();
                 }
+                const selectedText = editor.getSelection();
+                const formattedText = formatLinkList(selectedText);
+                editor.replaceSelection(formattedText);
             }
         });
     }

@@ -1,10 +1,20 @@
 # Link Formatter
 
+![Downloads](https://img.shields.io/github/downloads/dilantha/link-formatter/total)
+
 Formats a block of links into a clean markdown list in Obsidian.
 
 Here I'm pasting links from Firefox bookmarks and formatting them.
 
 ![Pasting and formatting](link-formatter.gif)
+
+## Installing from Obsidian
+
+1. Enable Community Plugins in Obsidian settings.
+2. Click the Link Formatter plugin link.
+3. Or browse the Community Plugins list and search for "Link Formatter".
+4. Click "Install" to install the plugin.
+5. Enable the plugin in the Plugins settings.
 
 ## Installing from BRAT
 
